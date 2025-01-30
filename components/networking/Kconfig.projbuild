@@ -1,0 +1,21 @@
+menu "Pool configuration"
+
+	config POOL_ADDRESS
+		string "Pool Address"
+        default ""
+		help
+            Make sure your pool supports the implemented protocol.
+
+    config POOL_PORT
+        int "Pool Port"
+        range 1 9999
+        default 3333
+        help
+            The port where your pool has setup for mining operations.
+    config WALLET
+        string "Wallet"
+        default ""
+        help
+            The wallet ID of the coin your mining.
+endmenu
+
